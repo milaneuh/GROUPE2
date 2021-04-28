@@ -10,40 +10,76 @@
 </head>
 
 <body>
-    <header>
-        <h1>ADRAR Formation</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"> Accueil </a></li>
-                <li><a href="html.html"> Le HTML </a></li>
-                <li><a href="css.html"> Le CSS </a></li>
-                <li><a href="javascript.html"> Le Javascript </a></li>
-                <li><a href="api.html"> L'API </a></li>
-                <li><a href="contact.html"> Contactez-nous </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="bloc_page">  
+        <header>
+            <h1>ADRAR Formation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Accueil </a></li>
+                    <li><a href="html.html"> Le HTML </a></li>
+                    <li><a href="css.html"> Le CSS </a></li>
+                    <li><a href="javascript.html"> Le Javascript </a></li>
+                    <li><a href="api.html"> L'API </a></li>
+                    <li><a href="contact.html"> Contactez-nous </a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section>
-        <h2>Titre</h2>
-        <p>Paragraphe</p>
-        <p>Paragraphe</p>        
-    </section>
+    <img src="" alt="">
 
-    <form>
-
+    <form method="POST" action="Mon_Formulaire_php">
+        <fieldset>
+            <Legend>Votre inscription</Legend>
+            <label for="nom"> Nom :</label>
+            <input type="text" name id="nom" placeholder="Saisissez votre nom" maxlength="20" minlength="2" id="nom"/>
+            <label for="prenom"> Prénom :</label>
+            <input type="text" name="prenom" placeholder="Saisissez votre prenom" maxlength="20"  minlength="2" id="nom"/>
+            <label for="email"> Votre e-mail</label>
+            <input type="email" placeholder="Saisissez votre adresse mail" id="email"/>
+            <label for="numero"> Votre numéro de téléphone</label>
+            <input type="tel" name="numéro" placeholder="Votre numéro" id="phone">
+            <label for="mdp"> Votre mot de passe</label>
+            <input type="number" placeholder="Votre numéro de sécurité sociale" id="numerosecu">
+            <label for="age">Age</label>
+            <input type="number" name="Votre age" placeholder="Ex : 15" id="age"><br/>
+            <label for="attente"> Expliquez en quelques lignes qu'elles sont vos attentes</label><br/>
+            <textarea name="attente" id="attente" cols="30" rows="10"></textarea>
+            <label for="commentaire"> Laissez un commentaire</label><br/>
+            <textarea cols="70" rows="10" placeholder="Votre commentaire" id="commentaire"></textarea><br/>
+            <label for="photo">Votre CV</label>
+            <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><br/>
+            <label for="dateComm">Date de votre inscription</label>
+            <input type="date"/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Vos expériences</legend>
+            <input type="checkbox" name="ckbox1" id="ckbox1"/><label for="ckbox1">HTML</label>
+            <input type="checkbox" name="ckbox2" id="ckbox2"/><label for="ckbox2">CSS</label>
+            <input type="checkbox" name="ckbox3" id="ckbox3"/><label for="ckbox3">JS</label>
+            <input type="checkbox" name="ckbox4" id="ckbox4"/><label for="ckbox4">PHP</label>
+            <input type="checkbox" name="ckbox5" id="ckbox5"/><label for="ckbox5">Aucunes expériences</label>
+        </fieldset>
+        <fieldset>
+            <legend>Niveau de certifiact attendu</legend>
+            <input type="radio" name="radio" id="radio1"/><label for="radio1">RNCP niveau 2</label>
+            <input type="radio" name="radio" id="radio2"/><label for="radio2">RNCP niveau 3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Vos disponibilité pour un entretien</legend>
+            <input type="date"/><br/>
+        </fieldset>
     </form>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#"> Mentions légales </a></li>
-                <li><a href="#"> Vie privée </a></li>
-                <li><a href="#"> Conditions générales de vente </a></li>
-                <li><a href="#"> Engagements </a></li>
-            </ul>
-        </nav>
-    </footer>
-
+    </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#"> Mentions légales </a></li>
+                    <li><a href="#"> Vie privée </a></li>
+                    <li><a href="#"> Conditions générales de vente </a></li>
+                    <li><a href="#"> Engagements </a></li>
+                </ul>
+            </nav>
+        </footer>
+    
 </body>
 </html>
