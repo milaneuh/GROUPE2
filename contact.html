@@ -33,10 +33,16 @@
     <form method="POST" action="Mon_Formulaire_php">
         <fieldset>
             <Legend>Votre inscription</Legend>
+            <label for="civilité"> Civilité :</label>
+            <input type="radio" name="radio" id="radio3"/><label for="radio3">Madame</label>
+            <input type="radio" name="radio" id="radio4"/><label for="radio4">Monsieur</label>
             <label for="nom"> Nom :</label>
-            <input type="text" name id="nom" placeholder="Saisissez votre nom" maxlength="20" minlength="2" id="nom"/>
+            <input type="text" name id="nom" placeholder="Votre nom" maxlength="20" minlength="2" id="nom"/>
             <label for="prenom"> Prénom :</label>
-            <input type="text" name="prenom" placeholder="Saisissez votre prenom" maxlength="20"  minlength="2" id="prenom"/>
+            <input type="text" name="prenom" placeholder="Votre prénom" maxlength="20"  minlength="2" id="prenom"/>
+            <label for="datenais"> Date et lieu de nassaince :</label>
+            <input type="date" name="datenais" placeholder="Date de naissance" id="datenais"/>
+            <input type="text" name="lieunais" placeholder="Lieu de naissance" id="lieunais"/>
             <label for="adresse"> Adresse</label>
             <label for="numeroderue"> N° de rue</label>
             <input type="number" name="numerorue" placeholder="N° de rue" maxlength="5"  minlength="2" id="numerorue"/>
@@ -76,8 +82,8 @@
         </fieldset>
         <fieldset>
             <legend>Niveau de certificat attendu</legend>
-            <input type="radio" name="radio" id="radio3"/><label for="radio3">RNCP niveau 2</label>
-            <input type="radio" name="radio" id="radio4"/><label for="radio4">RNCP niveau 3</label>
+            <input type="radio" name="radio" id="radio5"/><label for="radio5">RNCP niveau 2</label>
+            <input type="radio" name="radio" id="radio6"/><label for="radio6">RNCP niveau 3</label>
         </fieldset>
         <fieldset>
             <legend>Vos disponibilité pour un entretien</legend>
