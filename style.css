@@ -129,7 +129,7 @@ ul{
 /* Tableau */
 
 table {
-    border-collapse:separate;
+    border-collapse: separate;
     border:solid #ad937e 3px;
     border-radius:15px;
     -moz-border-radius:6px;
@@ -178,6 +178,10 @@ label{
 
 fieldset input{
     width: 25%;
+}
+
+#radio3, #radio4, #ckbox1, #ckbox2, #ckbox3, #ckbox4, #ckbox5, #radio5, #radio6{
+    margin-right: -10%;
 }
 
 #boutons{
@@ -284,6 +288,10 @@ iframe{
 
 fieldset input{
     width: 95%;
+}
+
+#radio3, #radio4, #ckbox1, #ckbox2, #ckbox3, #ckbox4, #ckbox5, #radio5, #radio6{
+    margin: 0;
 }
 
 }

@@ -26,16 +26,16 @@
     <div id="bloc_page">
         <section>
             <h3>Suite à ma visite sur votre site internet je souhaiterais :</h3>
-            <input type="radio" name="contactez" id="radio1" checked/><label for="radio1">Etre recontacté</label>
-            <input type="radio" name="contactez" id="radio2"/><label for="radio2">M'inscrire pour la prochaine formation</label>
+            <div><input type="radio" name="contactez" id="radio1" checked/><label for="radio1">Etre recontacté</label></div>
+            <div><input type="radio" name="contactez" id="radio2"/><label for="radio2">M'inscrire pour la prochaine formation</label></div>
         </section>
 
     <form method="POST" action="Mon_Formulaire_php">
         <fieldset>
             <Legend>Votre inscription</Legend>
             <label for="civilité"> Civilité :</label>
-            <input type="radio" name="radio" id="radio3"/><label for="radio3">Madame</label>
-            <input type="radio" name="radio" id="radio4"/><label for="radio4">Monsieur</label>
+            <div><input type="radio" name="radio" id="radio3"/><label for="radio3">Madame</label></div>
+            <div><input type="radio" name="radio" id="radio4"/><label for="radio4">Monsieur</label></div>
             <label for="nom"> Nom :</label>
             <input type="text" name id="nom" placeholder="Votre nom" maxlength="20" minlength="2" id="nom"/>
             <label for="prenom"> Prénom :</label>
@@ -63,7 +63,7 @@
             <label for="age">Age</label>
             <input type="number" name="Votre age" placeholder="Ex : 15" id="age">
 
-            <label for="attente"> Expliquez en quelques lignes qu'elles sont vos attentes</label>
+            <label for="attente"> Expliquez en quelques lignes quelles sont vos attentes</label>
             <textarea name="attente" id="attente" placeholder="Vos attentes"></textarea>
 
             <label for="commentaire"> Laissez un commentaire</label>
@@ -76,16 +76,16 @@
         </fieldset>
         <fieldset>
             <legend>Vos expériences</legend>
-            <input type="checkbox" name="exp_html" id="ckbox1"/><label for="ckbox1">HTML</label>
-            <input type="checkbox" name="exp_css" id="ckbox2"/><label for="ckbox2">CSS</label>
-            <input type="checkbox" name="exp_js" id="ckbox3"/><label for="ckbox3">JS</label>
-            <input type="checkbox" name="exp_php" id="ckbox4"/><label for="ckbox4">PHP</label>
-            <input type="checkbox" name="aucunes expreriences" id="ckbox5" checked/><label for="ckbox5">Aucunes expériences</label>
+            <div><input type="checkbox" name="exp_html" id="ckbox1"/><label for="ckbox1">HTML</label></div>
+            <div><input type="checkbox" name="exp_css" id="ckbox2"/><label for="ckbox2">CSS</label></div>
+            <div><input type="checkbox" name="exp_js" id="ckbox3"/><label for="ckbox3">JS</label></div>
+            <div><input type="checkbox" name="exp_php" id="ckbox4"/><label for="ckbox4">PHP</label></div>
+            <div><input type="checkbox" name="aucunes expreriences" id="ckbox5" checked/><label for="ckbox5">Aucunes expériences</label></div>
         </fieldset>
         <fieldset>
             <legend>Niveau de certificat attendu</legend>
-            <input type="radio" name="radio" id="radio5"/><label for="radio5">RNCP niveau 2</label>
-            <input type="radio" name="radio" id="radio6"/><label for="radio6">RNCP niveau 3</label>
+            <div><input type="radio" name="radio" id="radio5"/><label for="radio5">RNCP niveau 2</label></div>
+            <div><input type="radio" name="radio" id="radio6"/><label for="radio6">RNCP niveau 3</label></div>
         </fieldset>
         <fieldset>
             <legend>Vos disponibilité pour un entretien</legend>
