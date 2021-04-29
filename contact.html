@@ -23,27 +23,84 @@
             </ul>
         </nav>
     </header>
+    <div id="bloc_page">
+        <section>
+            <h3>Suite à ma visite sur votre site internet et aux présentations vues j'aimerais :</h3>
+            <input type="radio" name="contactez" id="radio1" checked/><label for="radio1">Etre recontacté</label>
+            <input type="radio" name="contactez" id="radio2"/><label for="radio2">M'inscrire pour la prochaine formation</label>
+        </section>
 
-    <section>
-        <h2>Titre</h2>
-        <p>Paragraphe</p>
-        <p>Paragraphe</p>        
-    </section>
+    <form method="POST" action="Mon_Formulaire_php">
+        <fieldset>
+            <Legend>Votre inscription</Legend>
+            <label for="nom"> Nom :</label>
+            <input type="text" name id="nom" placeholder="Saisissez votre nom" maxlength="20" minlength="2" id="nom"/>
+            <label for="prenom"> Prénom :</label>
+            <input type="text" name="prenom" placeholder="Saisissez votre prenom" maxlength="20"  minlength="2" id="prenom"/><br/> <!--A ENLEVER LES BR PARTOUT-->
+            <label for="adresse"> Adresse</label><br/> <!--A ENLEVER LES BR PARTOUT-->
+            <label for="numeroderue"> N° de rue</label>
+            <input type="number" name="numerorue" placeholder="N° de rue" maxlength="5"  minlength="2" id="numerorue"/>
+            <label for="rue"> Nom de rue</label>
+            <input type="text" name="rue" placeholder="Rue" maxlength="20"  minlength="2" id="numero"/>
+            <label for="cp"> Code postal</label>
+            <input type="number" name="cp" placeholder="Code postal" maxlength="5"  minlength="5" id="cp"/>
+            <label for="localite"> Localité</label>
+            <input type="text" name="localite" placeholder="Localité" maxlength="20"  minlength="2" id="numero"/>
+            <label for="email"> E-mail</label>
+            <input type="email" placeholder="Votre adresse mail" id="email"/>
+            <label for="numero"> N° de téléphone</label>
+            <input type="tel" name="numéro" placeholder="N° de téléphone" id="phone">
+            <label for="mdp"> N° de sécurité sociale</label>
+            <input type="number" placeholder="N° de sécurité sociale" id="numerosecu">
+            <label for="age">Age</label>
+            <input type="number" name="Votre age" placeholder="Ex : 15" id="age"><br/><!-- ENLEVER LES BR PARTOUT-->
 
-    <form>
+            <label for="attente"> Expliquez en quelques lignes qu'elles sont vos attentes</label><br/><!-- ENLEVER LES BR PARTOUT-->
+            <textarea name="attente" id="attente" placeholder="Vos attentes" cols="70" rows="10"></textarea><br/><!-- ENLEVER LES BR PARTOUT-->
 
+            <label for="commentaire"> Laissez un commentaire</label><br/> <!-- ENLEVER LES BR PARTOUT-->
+            <textarea name="commentaire" id="commentaire" placeholder="Votre commentaire" cols="70" rows="10"></textarea><br/><!-- ENLEVER LES BR PARTOUT-->
+
+            <label for="photo">Votre CV</label>
+            <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/><br/><!-- ENLEVER LES BR PARTOUT-->
+            <label for="dateComm">Date de votre inscription</label>
+            <input type="date"/><br/><!-- ENLEVER LES BR PARTOUT-->
+        </fieldset>
+        <fieldset>
+            <legend>Vos expériences</legend>
+            <input type="checkbox" name="exp_html" id="ckbox1"/><label for="ckbox1">HTML</label>
+            <input type="checkbox" name="exp_css" id="ckbox2"/><label for="ckbox2">CSS</label>
+            <input type="checkbox" name="exp_js" id="ckbox3"/><label for="ckbox3">JS</label>
+            <input type="checkbox" name="exp_php" id="ckbox4"/><label for="ckbox4">PHP</label>
+            <input type="checkbox" name="aucunes expreriences" id="ckbox5" checked/><label for="ckbox5">Aucunes expériences</label>
+        </fieldset>
+        <fieldset>
+            <legend>Niveau de certificat attendu</legend>
+            <input type="radio" name="radio" id="radio3"/><label for="radio3">RNCP niveau 2</label>
+            <input type="radio" name="radio" id="radio4"/><label for="radio4">RNCP niveau 3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Vos disponibilité pour un entretien</legend>
+            <input type="date"/><br/><!-- ENLEVER LES BR PARTOUT-->
+        </fieldset>
+        <fieldset>
+            <legend>Valider votre inscription</legend>
+            <input type="submit" value="Envoyer"/>
+            <input type="reset" value="Effacer"/>
+        </fieldset>
     </form>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#"> Mentions légales </a></li>
-                <li><a href="#"> Vie privée </a></li>
-                <li><a href="#"> Conditions générales de vente </a></li>
-                <li><a href="#"> Engagements </a></li>
-            </ul>
-        </nav>
-    </footer>
-
+    </div>
+        <footer>
+            <h4>ADRAR Formation</h4>
+                <nav>
+                    <ul>
+                    <li><a href="#"> Mentions légales </a></li>
+                    <li><a href="#"> Vie privée </a></li>
+                    <li><a href="#"> Conditions générales de vente </a></li>
+                    <li><a href="#"> Engagements </a></li>
+                    </ul>
+                </nav>
+        </footer>
+    
 </body>
 </html>
