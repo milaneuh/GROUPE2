@@ -7,6 +7,7 @@ body{
     padding: 0;
     margin: 0;
     text-shadow: grey 0 1px 0.5px;
+    text-align: justify;
 }
 
 #bloc_page{
@@ -71,6 +72,10 @@ h3, legend{
     font-size: 1.5em;
 }
 
+h2, h3{
+    margin-bottom: 5%;
+}
+
 section, fieldset{
     border: #ffdbbd 2px solid;
     box-shadow: #ffdbbd 0 2px 10px;
@@ -81,6 +86,7 @@ section, fieldset{
 
 p{
     margin-left: 2%;
+    margin-bottom: 5%;
 }
 
 section img{
@@ -89,6 +95,21 @@ section img{
 
 section .images{
     text-align: center;
+    margin-bottom: 10%;
+}
+
+@keyframes animation_logo{
+    0%{
+        transform: rotate(160deg);
+    }
+
+    100%{
+        transform: rotate(-160deg);
+    }
+}
+
+#logo_adrar:hover{
+    animation: animation_logo 1s infinite alternate
 }
 
 a{
@@ -101,10 +122,43 @@ a:hover{
     text-decoration: underline;
 }
 
+ul{
+    margin-left: 5%;
+}
+
+/* Tableau */
+
+table {
+    border-collapse:separate;
+    border:solid #ad937e 3px;
+    border-radius:15px;
+    -moz-border-radius:6px;
+    background-color: #fff7f0;
+    box-shadow: grey 0 2px 4px;
+}
+
+td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+    padding: 1%;
+}
+
+th {
+    border-top: none;
+    text-align: center;
+    background-image: linear-gradient(to top, #e94c39,#facece);
+    color: white;
+    font-size: 1.5em;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
 /* Formulaire */
 
 legend{
-    background-image: linear-gradient(to top, #ad937e, #ffdbbd);
+    background-image: white;
     border: white 0 solid;
     border-radius: 10px;
     padding: 1%;
@@ -117,7 +171,14 @@ fieldset{
     background-color: #fff2e8;
 }
 
+label{
+    margin-top: 1%;
+    color: #2f4079;
+}
 
+fieldset input{
+    width: 25%;
+}
 
 /* Pied de page */
 
@@ -150,10 +211,6 @@ strong{
     color: #351e04;
 }
 
-label{
-    margin-top: 1%;
-    color: #2f4079;
-}
 
 
 /* Responsive petite résolution */
@@ -199,6 +256,14 @@ nav a{
 
 section{
     background-color: white;
+}
+
+iframe{
+    width: auto;
+}
+
+fieldset input{
+    width: 95%;
 }
 
 }
