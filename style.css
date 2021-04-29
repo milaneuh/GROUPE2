@@ -180,6 +180,26 @@ fieldset input{
     width: 25%;
 }
 
+#boutons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    background-image: linear-gradient(to top, #a17e56, #ffdbbd);
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 1%;
+    font-family: impact;
+    color: #2f4079;
+    font-size: 1.3em;
+}
+
+.button:hover{
+    background-image: linear-gradient(to top, #80b9df , white);
+    border: #2f4079 2px solid;    
+}
+
 /* Pied de page */
 
 footer{
