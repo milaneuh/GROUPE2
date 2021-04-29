@@ -66,12 +66,12 @@ h2{
     text-shadow: #351e04 0 1px 2px;
 }
 
-h3{
+h3, legend{
     color: #351e04;
     font-size: 1.5em;
 }
 
-section{
+section, fieldset{
     border: #ffdbbd 2px solid;
     box-shadow: #ffdbbd 0 2px 10px;
     border-radius: 15px;
@@ -101,6 +101,24 @@ a:hover{
     text-decoration: underline;
 }
 
+/* Formulaire */
+
+legend{
+    background-image: linear-gradient(to top, #ad937e, #ffdbbd);
+    border: white 0 solid;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 1.3em;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff2e8;
+}
+
+
+
 /* Pied de page */
 
 footer{
@@ -123,11 +141,18 @@ h4{
     font-family: impact;
     font-size: 3em;
     text-shadow: #FEFFFE 0 2px 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 strong{
     font-weight: bold;
     color: #351e04;
+}
+
+label{
+    margin-top: 1%;
+    color: #2f4079;
 }
 
 
@@ -177,33 +202,3 @@ section{
 }
 
 }
-
-/*
-
-
-nav ul{
-	list-style-type: none;
-	display: flex;
-    justify-content: center;
-}
-
-nav li{
-	margin-right: 50px;
-}
-
-nav a{
-	font-size: 1.5em;
-	padding-bottom: 3px;
-	text-decoration: none;
-    color:#351e04;
-    text-shadow: #ffdbbd 0 1px 10px;
-    font-weight: bold;
-}
-
-nav a:hover{
-	color:  #351e04;
-	border-bottom: 3px solid #39a3e9;
-    text-decoration: none;
-}
-
-*/
