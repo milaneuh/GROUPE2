@@ -25,7 +25,10 @@
             </nav>
         </header>
     <div class="Block page">
-        <img src="" alt="">
+            <p>Suite à ma visite sur votre site internet et aux présentations vues j'aimerai :</p>
+            <legend>Votre demande</legend>
+            <input type="radio" name="contactez" id="radio1" checked/><label for="radio1">Etre recontacté</label>
+            <input type="radio" name="contactez" id="radio2"/><label for="radio2">M'inscrire pour la prochaine formation</label>
 
     <form method="POST" action="Mon_Formulaire_php">
         <fieldset>
@@ -33,9 +36,9 @@
             <label for="nom"> Nom :</label>
             <input type="text" name id="nom" placeholder="Saisissez votre nom" maxlength="20" minlength="2" id="nom"/>
             <label for="prenom"> Prénom :</label>
-            <input type="text" name="prenom" placeholder="Saisissez votre prenom" maxlength="20"  minlength="2" id="prenom"/>
-            <label for="adresse"> adresse</label><br/> <!--A ENLEVER LES BR PARTOUT-->
-            <label for="adresse"> N° de rue</label>
+            <input type="text" name="prenom" placeholder="Saisissez votre prenom" maxlength="20"  minlength="2" id="prenom"/><br/> <!--A ENLEVER LES BR PARTOUT-->
+            <label for="adresse"> Adresse</label><br/> <!--A ENLEVER LES BR PARTOUT-->
+            <label for="numeroderue"> N° de rue</label>
             <input type="number" name="numerorue" placeholder="N° de rue" maxlength="5"  minlength="2" id="numerorue"/>
             <label for="rue"> Nom de rue</label>
             <input type="text" name="rue" placeholder="Rue" maxlength="20"  minlength="2" id="numero"/>
@@ -65,16 +68,16 @@
         </fieldset>
         <fieldset>
             <legend>Vos expériences</legend>
-            <input type="checkbox" name="ckbox1" id="ckbox1"/><label for="ckbox1">HTML</label>
-            <input type="checkbox" name="ckbox2" id="ckbox2"/><label for="ckbox2">CSS</label>
-            <input type="checkbox" name="ckbox3" id="ckbox3"/><label for="ckbox3">JS</label>
-            <input type="checkbox" name="ckbox4" id="ckbox4"/><label for="ckbox4">PHP</label>
-            <input type="checkbox" name="ckbox5" id="ckbox5"/><label for="ckbox5">Aucunes expériences</label>
+            <input type="checkbox" name="exp_html" id="ckbox1"/><label for="ckbox1">HTML</label>
+            <input type="checkbox" name="exp_css" id="ckbox2"/><label for="ckbox2">CSS</label>
+            <input type="checkbox" name="exp_js" id="ckbox3"/><label for="ckbox3">JS</label>
+            <input type="checkbox" name="exp_php" id="ckbox4"/><label for="ckbox4">PHP</label>
+            <input type="checkbox" name="aucunes expreriences" id="ckbox5"/><label for="ckbox5">Aucunes expériences</label>
         </fieldset>
         <fieldset>
-            <legend>Niveau de certifiact attendu</legend>
-            <input type="radio" name="radio" id="radio1"/><label for="radio1">RNCP niveau 2</label>
-            <input type="radio" name="radio" id="radio2"/><label for="radio2">RNCP niveau 3</label>
+            <legend>Niveau de certificat attendu</legend>
+            <input type="radio" name="radio" id="radio3"/><label for="radio3">RNCP niveau 2</label>
+            <input type="radio" name="radio" id="radio4"/><label for="radio4">RNCP niveau 3</label>
         </fieldset>
         <fieldset>
             <legend>Vos disponibilité pour un entretien</legend>
@@ -88,14 +91,15 @@
     </form>
     </div>
         <footer>
-            <nav>
-                <ul>
+            <h4>ADRAR Formation</h4>
+                <nav>
+                    <ul>
                     <li><a href="#"> Mentions légales </a></li>
                     <li><a href="#"> Vie privée </a></li>
                     <li><a href="#"> Conditions générales de vente </a></li>
                     <li><a href="#"> Engagements </a></li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
         </footer>
     
 </body>
