@@ -1,11 +1,108 @@
+body{
+    background-color: #4C5C68;
+    font-family: verdana, georgia, sans-serif;
+    color: black ;
+    padding: 0;
+    margin: 0;
+    text-shadow: grey 0 1px 0.5px;
+}
+
+#bloc_page{
+    background-color: #FEFFFE;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(224, 72, 72),#FEFFFE);
+    border: #46494C solid 5px;
+    border-radius: 0 0 60px 60px;
+    text-align: center;
+}
+
+img{
+
+}
+
 h1{
+    font-family: impact, verdana;
+    color: #46494C;
+    text-shadow: #FEFFFE 0 8px 3px;
+    font-size: 5em;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+    justify-content: center;
+}
+
+nav li{
+	margin-right: 15px;
+}
+
+nav a{
+	font-size: 1.5em;
+	padding-bottom: 3px;
+	text-decoration: none;
+    color: #5D4954;
+    text-shadow: black 0 1px 1px;
+}
+
+nav a:hover{
+	color: #FEFFFE;
+	border-bottom: 3px solid #FEFFFE;
+}
+
+footer{
+    background-image: linear-gradient(to top,#FEFFFE, #5EC2EF);
+    border: #46494C solid 2px;
+    border-radius: 60px 60px 0 0;
+    box-shadow: #FEFFFE 0 20px 20px;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+footer nav a:hover{
+	color: #754f5B;
+	border-bottom: 3px solid #FC7A57;
+}
+
+h3{
+    color: #5D4954;
+    font-family: impact;
+    font-size: 3em;
+    text-shadow: #FEFFFE 0 2px 2px;
+}
+
+strong{
 
 }
 
 
 
+
+/*
+
+#5EC2EF     bleu
+#4C5C68
+#46494C     sombre
+#C5C3C6     clair
+#DCDCDD     blanc
+
+
+*/
+
 @media only screen and (max-width: 800px){
 
-/* Ici les propriétés petit écran */
+#bloc_page{
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+
+h1{
+    font-size: 2em;
+}
 
 }
